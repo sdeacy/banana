@@ -5,8 +5,9 @@ define([
     'backbone',
     'marionette',
     'underscore',
-    'app'
-], function (Backbone, Marionette, _, App) {
+    'app',
+    'text!../../templates/bar/index.html'
+], function (Backbone, Marionette, _, App, tplBar) {
 
     "use strict";
 
@@ -32,7 +33,7 @@ define([
     // is a marionette item view: http://marionettejs.com/docs/v2.4.3/marionette.itemview.html
     Bar.BarView = Marionette.ItemView.extend({
         tagName: 'li',
-        template: 'bar/index.html'
+        template: _.template(tplBar)
     });
 
 

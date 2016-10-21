@@ -12,6 +12,7 @@ define(['marionette', 'templates/templates', 'backbone','jquery', 'underscore'],
 
         // main regions of your app. could be like header, content and footer
         App.addRegions({
+            header: '#header',
             major: '#region-main-area'
         });
 
@@ -26,9 +27,11 @@ define(['marionette', 'templates/templates', 'backbone','jquery', 'underscore'],
                     //ALL ROUTES
                     'bar': 'bar'
                     ,'foo': 'foo'
+                    ,'login': 'login'
+                    ,'submit': 'submit'
 
                     // Menu route DEFAULT (always at the bottom!)
-                    ,'*default' : 'foo'
+                    ,'*default' : 'login'
                 }
             });
 
@@ -45,17 +48,17 @@ define(['marionette', 'templates/templates', 'backbone','jquery', 'underscore'],
         });
 
         // use jst templates by overriding marionette render
-        Marionette.Renderer.render = function(template, data) {
-            // allow No template
-            if (template === undefined) {
-                return '';
-            }
-            if (!window.JST[template]) {
-                throw 'Template "' + template + '" not found!';
-            }
-            // underscore create a template
-            return _.template(JST[template](data));
-        };
+        // Marionette.Renderer.render = function(template, data) {
+        //     // allow No template
+        //     if (template === undefined) {
+        //         return '';
+        //     }
+        //     if (!window.JST[template]) {
+        //         throw 'Template "' + template + '" not found!';
+        //     }
+        //     // underscore create a template
+        //     return _.template(JST[template](data));
+        // };
 
 
         return App;

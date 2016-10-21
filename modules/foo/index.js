@@ -5,8 +5,10 @@ define([
     'backbone',
     'marionette',
     'underscore',
-    'app'
-], function (Backbone, Marionette, _, App) {
+    'app',
+    'text!../../templates/foo/index.html',
+    'text!../../templates/foo/single-foo.html'
+], function (Backbone, Marionette, _, App, tplFoo, tplSingFoo) {
 
     "use strict";
 
@@ -46,7 +48,7 @@ define([
     // is a marionette item view: http://marionettejs.com/docs/v2.4.3/marionette.itemview.html
     Foo.FooView = Marionette.ItemView.extend({
         tagName: 'li',
-        template: 'foo/single-foo.html',
+        template: _.template(tplSingFoo),
         templateHelpers: function () {
             return {
                 displayName: function(){
@@ -61,7 +63,7 @@ define([
 
     // is a marionette composite view: http://marionettejs.com/docs/v2.4.3/marionette.compositeview.html
     Foo.FoosView = Marionette.CompositeView.extend({
-        template: 'foo/index.html',
+        template: _.template(tplFoo),
         childViewContainer: '#foos'
     });
 

@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     concat  = require('gulp-concat'),
     rimraf = require('gulp-rimraf'),
     requirejsOptimize = require('gulp-requirejs-optimize'),
-    p = require('./package.json');
+    p = require('./package.json')
+    watch = require('./semantic/tasks/watch'),
+    build = require('./semantic/tasks/build');
 
 // cleanup
 gulp.task('clean', function () {
@@ -47,3 +49,6 @@ gulp.task('build', ['clean-build', 'jst'], function () {
 gulp.task('default', ['jst'], function() {
     gulp.watch('templates/**/*.html', ['jst']);
 });
+
+gulp.task('watch-ui', watch);
+gulp.task('build-ui', build);

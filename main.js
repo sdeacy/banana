@@ -10,6 +10,8 @@ require(['app'], function(App) {
             // all modules have to be loaded here
             ,'modules/foo/index'
             ,'modules/bar/index'
+            ,'modules/login/index'
+            ,'modules/submit-event/index'
 
         ], function() {
             App.start();

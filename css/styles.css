@@ -1,0 +1,70 @@
+/* #region-main-area.login {
+   background: url('../images/Patrick_Street_Cork2.jpg') fixed;
+   background-size: cover;
+   padding: 0;
+   margin: 0;
+   height: 100%;
+ }*/
+
+ .form-holder {
+   background: rgba(255,255,255,0.2);
+   margin-top: 10%;
+   border-radius: 3px;
+ }
+
+ .form-head {
+   font-size: 30px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: #fff;
+   text-shadow: 0 0 30px #000;
+   margin: 15px auto 30px auto;
+ }
+
+ .remember-me {
+   text-align: left;
+ }
+ .ui.checkbox label {
+   color: #ddd;
+ }
+
+
+
+ #region-main-area.login {
+   background-color: #DADADA;
+   /*background: url('../images/Patrick_Street_Cork2.jpg') fixed;*/
+   background-size: cover;
+   padding: 0;
+   margin: 0;
+   height: 100%;
+
+}
+
+/*.form-holder {
+  background: rgba(255,255,255,0.2);
+  margin-top: 10%;
+  border-radius: 3px;
+}*/
+
+.form-head {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 30px #000;
+  margin: 15px auto 30px auto;
+}
+/*
+.loginView {
+   height: 100%;
+}*/
+
+/*body >  .login > .loginView > .grid {
+   height: 100%;
+}*/
+.image {
+   margin-top: -100px;
+}
+.column {
+   max-width: 450px;
+}
