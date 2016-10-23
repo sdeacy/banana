@@ -27,14 +27,19 @@ define(['app', 'marionette'], function (App, Marionette) {
         },
 
         login: function(){
-            console.log("Router.Controller login")
+            console.log("Router.Controller login");
             var login = new App.Login.Controller();
             login.index();
         },
         submit: function(){
-            console.log("Router.Controller login")
+            console.log("Router.Controller submit");
             var submit = new App.Submit.Controller();
             submit.index();
+        },
+        show: function(){
+            console.log("Router.Controller show");
+            var show = new App.Show.Controller();
+            show.index();
         }
     });
 
