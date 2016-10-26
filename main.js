@@ -12,6 +12,7 @@ require(['app'], function(App) {
             ,'modules/bar/index'
             ,'modules/login/index'
             ,'modules/submit-event/index'
+            ,'modules/show-event/index'
 
         ], function() {
             App.start();

@@ -1,5 +1,5 @@
 [
-  {"name": "foo_a"},
+  {"name": "blastin event", "date": "some date", "place": "cork like", "eventDetails": "blah blah"},
   {"name": "foo_b"},
   {"name": "foo_c"},
   {"name": "foo_d"},

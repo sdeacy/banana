@@ -29,6 +29,7 @@ define(['marionette', 'templates/templates', 'backbone','jquery', 'underscore'],
                     ,'foo': 'foo'
                     ,'login': 'login'
                     ,'submit': 'submit'
+                    ,'show': 'show'
 
                     // Menu route DEFAULT (always at the bottom!)
                     ,'*default' : 'login'

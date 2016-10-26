@@ -94,9 +94,9 @@ define([
             this.foosView = new Foo.FoosView({
                 collection: this.foos,
                 childView: Foo.FooView,
-                model: new Foo.Hello({
-                    message: 'Welcome to this awesome FOO-BAR app!'
-                })
+                // model: new Foo.Hello({
+                //     message: 'Welcome to this awesome FOO-BAR app!'
+                // })
             });
 
             // context is the Foo.Controller and listen on foos! how awesome!
@@ -107,6 +107,7 @@ define([
             });
 
             // get the data from th server
+            debugger;
             this.foos.fetch();
         },
 
