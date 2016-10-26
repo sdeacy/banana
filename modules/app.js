@@ -32,7 +32,7 @@ define(['marionette', 'templates/templates', 'backbone','jquery', 'underscore'],
                     ,'show': 'show'
 
                     // Menu route DEFAULT (always at the bottom!)
-                    ,'*default' : 'login'
+                    ,'*default' : 'show'
                 }
             });
 

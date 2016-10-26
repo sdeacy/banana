@@ -31,7 +31,7 @@ define([
 
     // is a backbone collection: http://backbonejs.org/#Collection
     Show.EventsCollection = Backbone.Collection.extend({
-        url: 'data/events.json',
+        url: 'http://143.239.97.138:8080/ComeON/ws/dealService/getAll',
         model: Show.eventModel
     });
 
@@ -52,6 +52,9 @@ define([
         tagName: 'div',
         className: 'show-event-card',
         template: _.template(tplEvent),
+        initialize: function() {
+            console.log("Show.EventView", this)
+        },
         // templateHelpers: function () {
         //     return {
         //         displayName: function(){
@@ -67,7 +70,10 @@ define([
     // is a marionette composite view: http://marionettejs.com/docs/v2.4.3/marionette.compositeview.html
     Show.EventsView = Marionette.CompositeView.extend({
         template: _.template(tplEvents),
-        childViewContainer: '#events'
+        childViewContainer: '#events',
+        initialize: function() {
+            console.log("Show.EventsView", this)
+        },
     });
 
 

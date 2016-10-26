@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "idUser": 1,
+    "title": "Title!",
+    "body": "this is a deal!",
+    "dtIns": "Oct 25, 2016 4:34:06 PM"
+  },
+  {
+    "id": 2,
+    "idUser": 2,
+    "title": "Title!",
+    "body": "this is a deal2!",
+    "dtIns": "Oct 25, 2016 4:34:06 PM"
+  },
+  {
+    "id": 3,
+    "idUser": 3,
+    "title": "Title!",
+    "body": "this is a deal3!",
+    "dtIns": "Oct 25, 2016 4:34:06 PM"
+  }
+]
